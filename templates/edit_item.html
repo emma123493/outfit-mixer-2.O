@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-6">
+    <h4>Edit Item</h4>
+    <form action="/edit/{{ item.id }}" method="post" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input name="name" class="form-control" value="{{ item.name }}" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Category</label>
+        <input name="category" class="form-control" value="{{ item.category }}" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Color</label>
+        <input name="color" class="form-control form-control-color" type="color" value="{{ item.color or '#ffffff' }}">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Replace Image</label>
+        <input name="image" type="file" class="form-control">
+      </div>
+      <button class="btn btn-primary">Save</button>
+      <a href="/" class="btn btn-secondary">Cancel</a>
+    </form>
+  </div>
+</div>
+{% endblock %}

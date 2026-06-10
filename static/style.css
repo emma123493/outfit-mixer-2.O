@@ -1,0 +1,40 @@
+.bg-soft {
+	background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+}
+
+body {
+	padding-bottom: 40px;
+	font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	background: linear-gradient(180deg, #f7fbff, #f2f6ff);
+	color: #1f2937;
+}
+
+.container { max-width: 1100px; }
+
+.navbar-brand img { border-radius: 6px; box-shadow: 0 3px 10px rgba(0,0,0,0.12); }
+.navbar { background: linear-gradient(90deg, #6ad3ff, #7b6bff); }
+.navbar .navbar-brand { color: #fff; font-weight: 600; }
+
+.card { border: 0; border-radius: 12px; box-shadow: 0 6px 18px rgba(50,50,93,0.08); transition: transform .12s ease, box-shadow .12s ease; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(50,50,93,0.12); }
+.card img { object-fit: cover; height: 150px; border-top-left-radius: 12px; border-top-right-radius: 12px; }
+.card p { margin-bottom: 0; }
+
+.form-control-color { height: 40px; padding: 0.25rem; border-radius: 8px; }
+video { border-radius: 8px; width: 100%; }
+
+.btn { border-radius: 8px; }
+.btn-outline-primary { border-color: rgba(120,100,255,0.9); color: rgba(120,100,255,0.95); }
+.btn-outline-primary:hover { background: rgba(120,100,255,0.06); }
+
+.small { color: #374151; }
+
+.saved-badge { background: rgba(255,255,255,0.06); padding: 6px 10px; border-radius: 999px; font-size: 12px; }
+
+/* responsive tweaks */
+@media (max-width: 768px) {
+	.card img { height: 120px; }
+	.navbar .navbar-brand { font-size: 16px; }
+}
+
+.app-footer { color: #6b7280; font-size: 13px; }
